@@ -43,7 +43,7 @@ def get_argument():
 
 def inference_all(model):
     print("Start inference")
-    imagenet_dataset = datasets.ImageFolder('/home/jakc4103/WDesktop/dataset/ILSVRC/Data/CLS-LOC/val', transforms.Compose([
+    imagenet_dataset = datasets.ImageFolder('/mnt/cephfs/mixed/dataset/imagenet/val', transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
