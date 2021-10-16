@@ -40,7 +40,7 @@ def get_argument():
     parser.add_argument("--dis_num_batch", type=int, default=8)
     return parser.parse_args()
 
-#################################################
+######################
 def inference_all(model):
     print("Start inference")
     imagenet_dataset = datasets.ImageFolder('/mnt/cephfs/mixed/dataset/imagenet/val', transforms.Compose([
